@@ -1,0 +1,282 @@
+.container{
+
+}
+
+/*Header Container*/
+.headingSection{
+
+
+    width: 100%;
+    box-sizing: border-box;
+
+    height: 8%;
+    
+    padding:0px 15px;
+    display: table;
+    border-bottom: 1px solid #ffffff;
+    background-color: #000000;
+    box-shadow: 2px 2px 5px #000000;
+    position: relative;
+  /* height: 8%;
+  overflow: hidden;
+    
+  background-color: #000000;
+  display: table;
+   width: 100%;
+   padding: 0px 15px;
+   box-sizing: border-box; */
+
+}
+.logoImageDiv{
+   
+    display: table-cell;
+    vertical-align: middle;
+    width: calc(100%/2);
+
+}
+.logoImage{
+    vertical-align: middle;
+}
+.headingText{
+    display: table-cell;
+    vertical-align: middle;
+    font-size:30px;
+   
+    
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    position: absolute;
+
+    width: 100%;
+    left: 0;
+    text-align: center;
+    height: 100%;
+   
+    display: table;
+    
+    
+}
+
+/* Header Container*/
+
+/* .headerContainer{
+    background-color: #f7a85e;
+    color:#000000;
+    text-align: center;
+   
+    height: 8%;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+    
+} */
+/* .headerTitle{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: x-large;
+    font-family: cursive;
+} */
+
+.subHeaderContainer{
+    height:6%;overflow:hidden;display: table;width:100%;
+
+}
+.subheaderTitle{
+    height:100%;width:20%;
+    
+    /* background-color:#a4bc91; */
+  /* background-color: #337ab7;  */
+  background-color: #0066ff;
+  color:#ffffff;
+    display: table-cell;vertical-align: middle;text-align: center;
+    border:1px solid #000000;
+}
+.subheaderTitleWithoutColor{
+    height:100%;width:20%;
+    display: table-cell;vertical-align: middle;text-align: center;
+    border:1px solid #000000;
+}
+
+.HeaderContainerHeading{
+    height:6%;overflow:hidden;display: table;width:100%;
+
+}
+.headerContainerTitle{
+    height:100%;background-color:#0066ff;
+    display: table-cell;vertical-align: middle;text-align: center;
+    border:1px solid #000000;color: #ffffff;
+}
+
+.containerBodyLeft{
+    width:60%;height:100%;margin-right: 0;display: table-cell;vertical-align: top;
+}
+
+.conatinerLeftTable{
+    display:table;width:100%;height: calc(92%/11);
+}
+
+
+.topCelllColor:nth-child(even) {
+    /* background-color: #ffb74c; */
+    background-color: #ffffff;
+}
+
+.topCelllColor{
+    background-color:#ffb74c ;
+}
+
+
+.bottomTwoCellColor{
+    /* background-color: #5cb85c; */
+    background-color:#b0eeed ;
+}
+
+.containerLeftCell{
+    display:table-cell;vertical-align: middle;border:0.2px solid black;
+    text-align: center;
+}
+.conatinerLeftBottomTable{
+    display:table;width:100%;height: 8%;
+}
+.containerBodyRight{
+    width:40%;height:60%;float: left;background-color: lightcoral;
+}
+
+.contianerRight{
+    width:40%;display:table-cell;vertical-align:top;height: 100%;
+}
+.containerRightTable{
+    display:table;width:100%;
+}
+.containerRightCell{
+    display:table-cell;vertical-align:middle;border:0.2px solid #000000;
+    
+}
+
+
+.editButton{
+    background-color:#337ab7;
+    border-color:#2e6da4;
+    color: #ffffff;
+    margin-right: 10px;
+}
+.submitButton{
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color:#ffffff;
+    margin-left:10px;
+}
+
+.btn{
+display: inline-block;
+padding:6px 12px;
+font-weight: 400;
+text-align: center;
+user-select: none;
+background-image: none;
+border-radius: 4px;
+border:1px solid transparent;
+outline: none;
+font-size: 16px;
+}
+
+/*Input Box*/
+
+.inputText{
+  
+    width: 90%;
+    height: 80%;
+    padding:3px 6px;
+    font-size: 19px;
+    color:#000000;
+
+    background-image: none;
+  
+    border-radius: 4px;
+    text-align: center;
+    outline: none;
+
+    background-color: transparent;border: 0px
+}
+.inpuTextArea{
+    width: 95%;height: 65%;resize: none;text-align: center;outline: none;
+     border-radius: 4px; background-color: transparent;border: 0px
+}
+.postedBy{
+    font-size: 14px;
+    color:#000000;
+    background-color: transparent;border: 0px;
+    background-image: none;
+    
+    border-radius: 4px;
+   
+    outline: none;
+}
+.inputTextWithoutWidth{
+    height: 80%;
+    padding:3px 6px;
+
+    color:#000000;
+   
+    background-image: none;
+   
+    border-radius: 4px;
+   
+    outline: none;
+    background-color: transparent;border: 0px;
+}
+.cellValue{
+
+}
+
+/* common css */
+.boldTextHeader{
+    font-size:21px;
+    
+    font-weight: 600;
+  
+}
+.boldTextHeaderTotal{
+    font-weight: 600;
+    font-size:22px;
+   
+}
+.boldText{
+  
+    font-size:16px;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+  
+}
+.boldTextRight{
+    font-size:20px;
+   
+    font-weight: 550;
+}
+
+.boldTextUSerName{
+    font-size:15px;
+   
+    font-weight: 550;
+}
+.boldTextThought{
+    font-weight: 600;
+    font-size:20px;
+    letter-spacing: 0.2px;
+}
+.widthCelltwenty{
+    width:20%;
+}
+.widthCellFourty{
+    width:40%;
+}
+.widthCellSixty{
+    width:60%;
+}
+.widthEqualThirty{
+    width: calc(100%/3);
+}
+
+.widthEqualSeventy{
+    width: calc(100%/(3/2));
+}
