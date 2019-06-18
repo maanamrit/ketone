@@ -1,0 +1,335 @@
+<% include header %>
+    <div class="container">
+        <!-- <div class="headerContainer">
+        <span class="headerTitle">CHD-IT Service Desk Dashboard</span>
+    </div> -->
+
+
+        <div class="headingSection" style="position:relative;">
+            <span class="logoImageDiv">
+                <img src="/logo-sbi.png" class="logoImage">
+            </span>
+
+            <span class="headingText">
+                <span style="display: table-cell;vertical-align: middle;font-weight: bold;">CHD-IT Service Desk Dashboard</span>
+            </span>
+            <span class="logoImageDiv">
+                <img src="/turbine_logo.png" style="height:34px;width:118px;float: right;" class="logoImage">
+            </span>
+        </div>
+
+
+        <div class="subHeaderContainer">
+            <div class="subheaderTitle boldTextHeader">
+                Date
+
+            </div>
+            <div class="subheaderTitle boldTextHeader">
+                Total Calls
+
+            </div>
+            <div class="subheaderTitle boldTextHeader"> Answered Calls
+
+            </div>
+            <div class="subheaderTitle boldTextHeader">
+                Abandoned Calls
+
+            </div>
+            <div class="subheaderTitle boldTextHeader">
+                Answered Call %
+            </div>
+        </div>
+
+        <div class="subHeaderContainer">
+            <div class="subheaderTitleWithoutColor" style="position:relative;">
+
+                <input id="dateDataPicker" readonly class="inputText boldTextRight" type="text" />
+                <!-- <img id="showCalender" style="position: absolute; height: 60%;right: 5%;top: 14%;" src="/icon-calendar-blue.png" /> -->
+            </div>
+            <div class="subheaderTitleWithoutColor">
+                <input id="totalCall" readonly class="inputText ShowInputText boldTextRight" type="text" />
+
+            </div>
+            <div class="subheaderTitleWithoutColor">
+                <input id="answeredCall" readonly class="inputText ShowInputText boldTextRight" type="text" />
+
+            </div>
+            <div class="subheaderTitleWithoutColor">
+
+                <input id="abandonCall" readonly class="inputText boldTextRight" type="text" />
+
+            </div>
+            <div class="subheaderTitleWithoutColor ">
+                <span id="totalCallsData" class="boldTextRight">0</span>
+            </div>
+        </div>
+
+        <div class="HeaderContainerHeading">
+            <div class="headerContainerTitle widthCelltwenty boldTextHeader">
+                WorkFlow/Request
+
+            </div>
+            <div class="headerContainerTitle widthCelltwenty boldTextHeader">
+                Assigned To
+
+            </div>
+            <div class="headerContainerTitle widthCelltwenty boldTextHeader">Open Ticket
+
+            </div>
+            <div style="" class="headerContainerTitle widthCellFourty boldTextThought">
+                Thought Of The Day
+            </div>
+
+        </div>
+
+        <div style="height:69%;display:table;width: 100%;overflow:hidden;">
+            <div class="containerBodyLeft">
+                <div class="conatinerLeftTable topCelllColor">
+                    <div class="containerLeftCell widthEqualThirty boldTextRight">
+                        Support Central
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="supportCentralAssign" class="inputText ShowInputTextString boldTextRight" type="text" />
+
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="supportCentralOpen" class="inputText ShowInputText totalOpen boldTextRight" type="text" />
+
+                    </div>
+                </div>
+                <div class="conatinerLeftTable topCelllColor">
+                    <div class="containerLeftCell widthEqualThirty boldTextRight">
+                        SAP FG ID Creation
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="sapCreationAssign" class="inputText ShowInputTextString boldTextRight" type="text" />
+
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="sapCreationOpen" class="inputText ShowInputText totalOpen boldTextRight" type="text" />
+
+                    </div>
+                </div>
+                <div class="conatinerLeftTable topCelllColor">
+                    <div class="containerLeftCell widthEqualThirty boldTextRight">
+                        SSO ID Activation
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="sapClosureAssign" class="inputText ShowInputTextString boldTextRight" type="text" />
+
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="sapClosureOpen" class="inputText ShowInputText totalOpen boldTextRight" type="text" />
+
+                    </div>
+                </div>
+                <div class="conatinerLeftTable topCelllColor">
+                    <div class="containerLeftCell widthEqualThirty boldTextRight">
+                        Vision Plus
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="outlineAssign" class="inputText ShowInputTextString boldTextRight" type="text" />
+
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="outlineOpen" class="inputText ShowInputText totalOpen boldTextRight" type="text" />
+
+                    </div>
+                </div>
+                <div class="conatinerLeftTable topCelllColor">
+                    <div class="containerLeftCell widthEqualThirty boldTextRight">
+                        Printer/Internet
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="printerAccessAssign" class="inputText ShowInputTextString boldTextRight" type="text" />
+
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="printerAccessOpen" class="inputText ShowInputText totalOpen boldTextRight" type="text" />
+
+                    </div>
+                </div>
+                <div class="conatinerLeftTable topCelllColor">
+                    <div class="containerLeftCell widthEqualThirty boldTextRight">
+                        SMTP/VPN
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="vpnAccessAssign" class="inputText ShowInputTextString boldTextRight" type="text" />
+
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="vpnAccessOpen" class="inputText ShowInputText totalOpen boldTextRight" type="text" />
+
+                    </div>
+                </div>
+                <div class="conatinerLeftTable topCelllColor">
+                    <div class="containerLeftCell widthEqualThirty boldTextRight">
+                        HCM
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="hcmIncidentAssign" class="inputText ShowInputTextString boldTextRight" type="text" />
+
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="hcmIncidentOpen" class="inputText ShowInputText totalOpen boldTextRight" type="text" />
+
+                    </div>
+                </div>
+                <div class="conatinerLeftTable topCelllColor">
+                    <div class="containerLeftCell widthEqualThirty boldTextRight">
+                        SNAPS
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="erpAccessAssign" class="inputText ShowInputTextString boldTextRight" type="text" />
+
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="erpAccessOpen" class="inputText ShowInputText totalOpen boldTextRight" type="text" />
+
+                    </div>
+                </div>
+                <div class="conatinerLeftTable topCelllColor">
+                    <div class="containerLeftCell widthEqualThirty boldTextRight">
+                        IT Asset Allocation
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="itAssetsAssign" class="inputText ShowInputTextString boldTextRight" type="text" />
+
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="itAssetsOpen" class="inputText ShowInputText totalOpen boldTextRight" type="text" />
+
+                    </div>
+                </div>
+                <div class="conatinerLeftTable bottomTwoCellColor">
+                    <div class="containerLeftCell widthEqualThirty boldTextRight">
+                        Service Now
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="geServiceAssign" class="inputText ShowInputTextString boldTextRight" type="text" />
+
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="geServiceOpen" class="inputText ShowInputText totalOpen boldTextRight" type="text" />
+
+                    </div>
+                </div>
+                <div class="conatinerLeftTable bottomTwoCellColor">
+                    <div class="containerLeftCell widthEqualThirty boldTextRight">
+                        Emails at CHD-IT
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="pendingEmailsAssign" class="inputText ShowInputTextString boldTextRight" type="text" />
+
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty">
+                        <input readonly id="pendingEmailsOpen" class="inputText ShowInputText totalOpen boldTextRight" type="text" />
+
+                    </div>
+                </div>
+                <div class="conatinerLeftBottomTable">
+                    <div class="containerLeftCell widthEqualThirty boldTextHeaderTotal" style="background-color:#0066ff;color:#ffffff;">
+                        Total
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty" style="background-color:#0066ff;color:#ffffff;">
+                        ----
+                    </div>
+                    <div class="containerLeftCell widthEqualThirty" id="totalCalls" style="background-color:#0066ff;color:#ffffff;font-size: 22px;font-weight: 600">
+                        0
+                    </div>
+
+                </div>
+            </div>
+            <div class="contianerRight">
+                <div class="containerRightTable" style="height:50%;text-align: center;position: relative;">
+                    <div class="containerRightCell">
+                        <!-- This is the thought of the day -->
+                        <textarea id="thoughtOfDay" style="font-size:24px;font-weight:600;overflow:hidden;" class="inpuTextArea ShowInputTextString" readonly>
+                    </textarea>
+
+                    </div>
+                    <div style="position:absolute;bottom:0;height: 10%;right:5%; bottom: 3%;">
+                        <span>Posted by : </span>
+                        <input id="postedBy" type="text" class="ShowInputTextString postedBy boldTextUSerName" readonly/>
+
+                    </div>
+
+                </div>
+                <div class="containerRightTable" style="height:30%;">
+                    <div class="containerRightCell" style="padding-left:5px;">
+                        <div style="height:22%">
+
+                            <span class="boldText">Appreciation Email For: </span>
+                            <input id="appreciationMail" style="width:35%;" readonly type="text" value="Vaibhav Rana" class="ShowInputTextString inputTextWithoutWidth boldTextUSerName"
+                            />
+
+
+                        </div>
+                        <div style="height:22%">
+
+
+                            <span class="boldText">Max Calls Attended By :</span>
+                            <input id="maxCallAttender" readonly type="text" class="ShowInputTextString inputTextWithoutWidth boldTextUSerName" />
+
+
+
+                        </div>
+                        <div style="height:22%">
+
+                            <span class="boldText">Smiley Face of The Day :</span>
+                            <input id="smileFaceOfDay" readonly type="text" class="ShowInputTextString inputTextWithoutWidth boldTextUSerName" />
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="containerRightTable" style="height:19.5%;">
+                    <div class="containerRightCell" style="padding-left:5px;">
+                        <div style="height:35%">
+                            <div>
+                                <span class="boldText">Unscheduled leave :</span>
+                                <input id="unscheduleLeave" readonly type="text" class="ShowInputText inputTextWithoutWidth" />
+
+                            </div>
+                        </div>
+                        <div style="height:35%">
+                            <div>
+                                <span class="boldText">Scheduled leave:</span>
+                                <input id="scheduleLeave" readonly type="text" class="ShowInputText inputTextWithoutWidth" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div style="position: absolute;bottom:0;background-color: #ffffff;width: 100%;text-align: center;height: 5%">
+            <input type="button" id="editButton" class="btn editButton" value="Edit Data" />
+            <input type="button" id="submitButton" class="btn submitButton" value="Submit Data" />
+        </div>
+
+
+
+        <!-- green color : #a4bc91  #b3b8cc -->
+        <!-- <div class="subHeaderContainer">
+        <div class="subheaderTitle verticalAlignContainer">
+            <span class="verticalAlignText">WorkFlow/Request</span>
+        </div>
+        <div class="subheaderTitle verticalAlignContainer">
+            <span class="verticalAlignText">Assigned Service Desk Engineer</span>
+        </div>
+        <div class="subheaderTitle verticalAlignContainer">
+            <span class="verticalAlignText">Open-Pending Ticket Count</span>
+        </div>
+        <div class="subheaderTitle verticalAlignContainer">
+            <span class="verticalAlignText">Thought Of The Day</span>
+        </div>
+        
+    </div> -->
+        <!-- <div style="height:82%;background-color:lightcoral;"></div> -->
+    </div>
+    <% include footer %>
